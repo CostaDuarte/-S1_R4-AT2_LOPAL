@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flowgorithm"/>
+        <attribute name="authors" value="I1HN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-15 06:48:52 "/>
+        <attribute name="created" value="STFITjtFQ0U0MzZTRU5BSTMxOzIwMjYtMDQtMTU7IjA2OjQ1OjMzICI7MjI5OA=="/>
+        <attribute name="edited" value="STFITjtFQ0U0MzZTRU5BSTMxOzIwMjYtMDQtMTU7IjA2OjQ4OjUyICI7MTsyNDEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numUm" type="Integer" array="False" size=""/>
+            <output expression="&quot;Me diga um n&#250;mero e eu verei se ele &#233; par&quot;" newline="True"/>
+            <input variable="numUm"/>
+            <if expression="numUm % 2 = 0">
+                <then>
+                    <output expression="&quot;O n&#250;mero informado &#233; par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O n&#250;mero informado &#233; impar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
