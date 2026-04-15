@@ -12,14 +12,14 @@
         <parameters/>
         <body>
             <declare name="numUm" type="Integer" array="False" size=""/>
-            <output expression="&quot;Me diga um n&#250;mero e eu verei se ele &#233; par&quot;" newline="True"/>
+            <output expression="&quot;Me diga um n&#250;mero e eu verei se ele &#233; par.&quot;" newline="True"/>
             <input variable="numUm"/>
             <if expression="numUm % 2 = 0">
                 <then>
-                    <output expression="&quot;O n&#250;mero informado &#233; par&quot;" newline="True"/>
+                    <output expression="&quot;O n&#250;mero informado &#233; par.&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;O n&#250;mero informado &#233; impar&quot;" newline="True"/>
+                    <output expression="&quot;O n&#250;mero informado &#233; impar.&quot;" newline="True"/>
                 </else>
             </if>
         </body>
