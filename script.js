@@ -1,10 +1,12 @@
-valorCompra = Number(prompt("digite o valor da compra"));
-if (valorCompra >= 150) {
-  alert(
-    `o valor do desconto é ${(0.02 * valorCompra).toFixed(2)} e o novo valor é ${(0.98 * valorCompra).toFixed(2)}!`,
-  );
+altura = Number(prompt("Informe sua altura EM METROS"));
+if (isNaN(altura)) {
+  alert("Você não inseriu um número");
+} else if (altura <= 2.5) {
+  if (altura >= 1.4) {
+    alert("Pode entrar no brinquedo");
+  } else {
+    alert("Altura insuficiente");
+  }
 } else {
-  alert(
-    `Sua compra tera um valor de ${valorCompra.toFixed(2)} e tera um cashback de ${(0.02 * valorCompra).toFixed(2)}!`,
-  );
+  alert("Altura inválida inserida");
 }

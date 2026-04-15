@@ -4,22 +4,29 @@
         <attribute name="name" value="flowgorithm"/>
         <attribute name="authors" value="I1HN"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-04-15 07:24:23 "/>
+        <attribute name="saved" value="2026-04-15 07:55:12 "/>
         <attribute name="created" value="STFITjtFQ0U0MzZTRU5BSTMxOzIwMjYtMDQtMTU7IjA3OjA1OjA3ICI7MjI5Ng=="/>
-        <attribute name="edited" value="STFITjtFQ0U0MzZTRU5BSTMxOzIwMjYtMDQtMTU7IjA3OjI0OjIzICI7MTsyNDAz"/>
+        <attribute name="edited" value="STFITjtFQ0U0MzZTRU5BSTMxOzIwMjYtMDQtMTU7IjA3OjU1OjEyICI7MzsyNDA3"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="valorCompra" type="Real" array="False" size=""/>
-            <output expression="&quot;digite o valor da compra.&quot;" newline="True"/>
-            <input variable="valorCompra"/>
-            <if expression="valorCompra &gt;= 150">
+            <declare name="Altura" type="Real" array="False" size=""/>
+            <output expression="&quot;informe sua altura EM METROS.&quot;" newline="True"/>
+            <input variable="Altura"/>
+            <if expression="valorCompra &lt;= 2.5">
                 <then>
-                    <output expression="&quot;o valor do desconto &#233; &quot; &amp;0.02*valorCompra&amp; &quot; e o novo valor &#233; &quot; &amp;0.98*valorCompra&amp; &quot;!&quot;" newline="True"/>
+                    <if expression="Altura &gt;= 1.40">
+                        <then>
+                            <output expression="&quot;Pode entrar no brinquedo.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Altura insuficiente&quot;" newline="True"/>
+                        </else>
+                    </if>
                 </then>
                 <else>
-                    <output expression="&quot;Sua compra tera um valor de &quot; &amp;valorCompra&amp; &quot; e tera um cashback de &quot; &amp;0.02*valorCompra&amp; &quot;!&quot;" newline="True"/>
+                    <output expression="&quot;Altura inv&#225;lida inserida&quot;" newline="True"/>
                 </else>
             </if>
         </body>
