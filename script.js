@@ -1,7 +1,9 @@
-valorCompra = Number(prompt("digite o valor da compra"));
-if (valorCompra >= 150) {
+valorCompra = Number(prompt("Digite o valor da compra"));
+if (isNaN(valorCompra)) {
+  alert("Você não inseriu um numero");
+} else if (valorCompra >= 150) {
   alert(
-    `o valor do desconto é ${(0.02 * valorCompra).toFixed(2)} e o novo valor é ${(0.98 * valorCompra).toFixed(2)}!`,
+    `O valor do desconto é ${(0.02 * valorCompra).toFixed(2)} e o novo valor é ${(0.98 * valorCompra).toFixed(2)}!`,
   );
 } else {
   alert(

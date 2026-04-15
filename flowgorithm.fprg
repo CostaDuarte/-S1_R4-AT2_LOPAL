@@ -12,11 +12,11 @@
         <parameters/>
         <body>
             <declare name="valorCompra" type="Real" array="False" size=""/>
-            <output expression="&quot;digite o valor da compra.&quot;" newline="True"/>
+            <output expression="&quot;Digite o valor da compra.&quot;" newline="True"/>
             <input variable="valorCompra"/>
             <if expression="valorCompra &gt;= 150">
                 <then>
-                    <output expression="&quot;o valor do desconto &#233; &quot; &amp;0.02*valorCompra&amp; &quot; e o novo valor &#233; &quot; &amp;0.98*valorCompra&amp; &quot;!&quot;" newline="True"/>
+                    <output expression="&quot;O valor do desconto &#233; &quot; &amp;0.02*valorCompra&amp; &quot; e o novo valor &#233; &quot; &amp;0.98*valorCompra&amp; &quot;!&quot;" newline="True"/>
                 </then>
                 <else>
                     <output expression="&quot;Sua compra tera um valor de &quot; &amp;valorCompra&amp; &quot; e tera um cashback de &quot; &amp;0.02*valorCompra&amp; &quot;!&quot;" newline="True"/>
