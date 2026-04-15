@@ -1,4 +1,4 @@
-numUm = Number(prompt("Me diga um número e eu verei se ele é par."));
+numUm = parseInt(prompt("Me diga um número e eu verei se ele é par."));
 if (isNaN(numUm)) {
   alert("Você não inseriu um número.");
 } else if (numUm % 2 == 0) {
