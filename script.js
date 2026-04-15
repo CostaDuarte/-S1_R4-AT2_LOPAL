@@ -1,12 +1,7 @@
-altura = Number(prompt("Informe sua altura EM METROS"));
-if (isNaN(altura)) {
-  alert("Você não inseriu um número");
-} else if (altura <= 2.5) {
-  if (altura >= 1.4) {
-    alert("Pode entrar no brinquedo");
-  } else {
-    alert("Altura insuficiente");
-  }
+senhaReal = prompt("Para se cadastrar por favor crie uma senha");
+senhaInserida = prompt("Digite novamente sua senha");
+if (senhaReal === senhaInserida) {
+  alert("Acesso permitido.");
 } else {
-  alert("Altura inválida inserida");
+  alert("Senha incorreta.");
 }

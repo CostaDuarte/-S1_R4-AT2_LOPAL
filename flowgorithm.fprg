@@ -4,19 +4,19 @@
         <attribute name="name" value="flowgorithm"/>
         <attribute name="authors" value="I1HN"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-04-15 07:55:12 "/>
+        <attribute name="saved" value="2026-04-15 08:11:24 "/>
         <attribute name="created" value="STFITjtFQ0U0MzZTRU5BSTMxOzIwMjYtMDQtMTU7IjA3OjA1OjA3ICI7MjI5Ng=="/>
-        <attribute name="edited" value="STFITjtFQ0U0MzZTRU5BSTMxOzIwMjYtMDQtMTU7IjA3OjU1OjEyICI7MzsyNDA3"/>
+        <attribute name="edited" value="STFITjtFQ0U0MzZTRU5BSTMxOzIwMjYtMDQtMTU7IjA4OjExOjI0ICI7NDsyNDA0"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="Altura" type="Real" array="False" size=""/>
+            <declare name="altura" type="Real" array="False" size=""/>
             <output expression="&quot;informe sua altura EM METROS.&quot;" newline="True"/>
-            <input variable="Altura"/>
-            <if expression="valorCompra &lt;= 2.5">
+            <input variable="altura"/>
+            <if expression="altura &lt;= 2.5">
                 <then>
-                    <if expression="Altura &gt;= 1.40">
+                    <if expression="altura &gt;= 1.40">
                         <then>
                             <output expression="&quot;Pode entrar no brinquedo.&quot;" newline="True"/>
                         </then>
