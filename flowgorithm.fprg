@@ -4,22 +4,22 @@
         <attribute name="name" value="flowgorithm"/>
         <attribute name="authors" value="I1HN"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-04-15 06:48:52 "/>
-        <attribute name="created" value="STFITjtFQ0U0MzZTRU5BSTMxOzIwMjYtMDQtMTU7IjA2OjQ1OjMzICI7MjI5OA=="/>
-        <attribute name="edited" value="STFITjtFQ0U0MzZTRU5BSTMxOzIwMjYtMDQtMTU7IjA2OjQ4OjUyICI7MTsyNDEw"/>
+        <attribute name="saved" value="2026-04-15 07:24:23 "/>
+        <attribute name="created" value="STFITjtFQ0U0MzZTRU5BSTMxOzIwMjYtMDQtMTU7IjA3OjA1OjA3ICI7MjI5Ng=="/>
+        <attribute name="edited" value="STFITjtFQ0U0MzZTRU5BSTMxOzIwMjYtMDQtMTU7IjA3OjI0OjIzICI7MTsyNDAz"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="numUm" type="Integer" array="False" size=""/>
-            <output expression="&quot;Me diga um n&#250;mero e eu verei se ele &#233; par&quot;" newline="True"/>
-            <input variable="numUm"/>
-            <if expression="numUm % 2 = 0">
+            <declare name="valorCompra" type="Real" array="False" size=""/>
+            <output expression="&quot;digite o valor da compra.&quot;" newline="True"/>
+            <input variable="valorCompra"/>
+            <if expression="valorCompra &gt;= 150">
                 <then>
-                    <output expression="&quot;O n&#250;mero informado &#233; par&quot;" newline="True"/>
+                    <output expression="&quot;o valor do desconto &#233; &quot; &amp;0.02*valorCompra&amp; &quot; e o novo valor &#233; &quot; &amp;0.98*valorCompra&amp; &quot;!&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;O n&#250;mero informado &#233; impar&quot;" newline="True"/>
+                    <output expression="&quot;Sua compra tera um valor de &quot; &amp;valorCompra&amp; &quot; e tera um cashback de &quot; &amp;0.02*valorCompra&amp; &quot;!&quot;" newline="True"/>
                 </else>
             </if>
         </body>
