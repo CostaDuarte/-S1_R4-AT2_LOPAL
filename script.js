@@ -1,4 +1,6 @@
 altura = Number(prompt("Informe sua altura EM METROS"));
+//isNan: envia um sinal booleano verdadeiro quando o valor da variável é texto
+//usei esse codigo para impedir que o usúario digite algo que não é número
 if (isNaN(altura)) {
   alert("Você não inseriu um número");
 } else if (altura <= 2.5) {
