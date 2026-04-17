@@ -1,4 +1,4 @@
-altura = Number(prompt("Informe sua altura EM METROS"));
+let altura = Number(prompt("Informe sua altura EM METROS"));
 //isNan: envia um sinal booleano verdadeiro quando o valor da variável é texto
 //usei esse codigo para impedir que o usúario digite algo que não é número
 if (isNaN(altura)) {
