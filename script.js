@@ -1,6 +1,6 @@
-valorCompra = Number(prompt("Digite o valor da compra"));
+let valorCompra = Number(prompt("Digite o valor da compra"));
 //cashDesconto é uma mistura da váriavel cashback com desconto pois em ambos os cenários elas terão o mesmo valor
-cashDesconto = 0.02 * valorCompra;
+let cashDesconto = 0.02 * valorCompra;
 //isNan: envia um sinal booleano verdadeiro quando o valor da variável é texto
 //usei esse codigo para impedir que o usúario digite algo que não é número
 if (isNaN(valorCompra)) {
