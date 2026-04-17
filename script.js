@@ -1,4 +1,6 @@
 valorCompra = Number(prompt("Digite o valor da compra"));
+//isNan: envia um sinal booleano verdadeiro quando o valor da variável é texto
+//usei esse codigo para impedir que o usúario digite algo que não é número
 if (isNaN(valorCompra)) {
   alert("Você não inseriu um numero");
 } else if (valorCompra >= 150) {
