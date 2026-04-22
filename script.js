@@ -3,7 +3,7 @@ let altura = Number(prompt("Informe sua altura EM METROS"));
 //usei esse codigo para impedir que o usúario digite algo que não é número
 if (isNaN(altura)) {
   alert("Você não inseriu um número");
-} else if (altura <= 2.5) {
+} else if (altura <= 2.5 || altura >= 0.5) {
   if (altura >= 1.4) {
     alert("Pode entrar no brinquedo");
   } else {
